@@ -1,12 +1,7 @@
-name: Copy to index.js
+name: Copy to worker.js
 
 on:
-  push:
-    branches:
-      - main
-      - master
-    paths:
-      - '少年你相信光吗'
+  workflow_dispatch:
 
 jobs:
   copy-file:
