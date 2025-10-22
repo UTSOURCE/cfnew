@@ -18,7 +18,7 @@
 |  **Workers视频教程** | 直观的操作演示和功能讲解 | https://youtu.be/Rlypv_iswD8 |
 |  **Snippets视频教程** | 直观的操作演示和功能讲解 | https://www.youtube.com/watch?v=xeFeH3Akcu8 |
 
-###  部署
+###  部署1
 	
 加入了千呼万唤的订阅每15分钟自动优选一次
 
