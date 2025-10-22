@@ -19,7 +19,7 @@ jobs:
       - name: Copy file to index.js
         run: |
           cp '少年你相信光吗' index.js
-          echo "成功将 '少年你相信光吗' 复制为 index.js"
+          echo "成功将 '少年你相信光吗' 复制为 worker.js"
 
       - name: Commit and push index.js
         run: |
@@ -29,6 +29,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit, index.js is already up-to-date."
           else
-            git commit -m "chore: Update index.js from 少年你相信光吗"
+            git commit -m "chore: Update worker.js from 少年你相信光吗"
             git push
           fi
