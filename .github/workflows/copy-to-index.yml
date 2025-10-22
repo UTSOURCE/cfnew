@@ -1,4 +1,4 @@
-name: Copy to index.js
+name: Copy to worker.js
 
 on:
   push:
@@ -16,19 +16,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Copy file to index.js
+      - name: Copy file to worker.js
         run: |
-          cp '少年你相信光吗' index.js
-          echo "成功将 '少年你相信光吗' 复制为 index.js"
+          cp '少年你相信光吗' worker.js
+          echo "成功将 '少年你相信光吗' 复制为 worker.js"
 
-      - name: Commit and push index.js
+      - name: Commit and push worker.js
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add index.js
+          git add worker.js
           if git diff --staged --quiet; then
-            echo "No changes to commit, index.js is already up-to-date."
+            echo "No changes to commit, worker.js is already up-to-date."
           else
-            git commit -m "chore: Update index.js from 少年你相信光吗"
+            git commit -m "chore: Update worker.js from 少年你相信光吗"
             git push
           fi
